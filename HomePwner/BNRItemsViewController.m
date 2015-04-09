@@ -77,11 +77,11 @@
     NSString *urlpick = selectedItem.itemName;
     NSURL *urlpick2 = [[NSURL alloc] initWithString:urlpick];
     
-    self.webViewController.URL = *urlpick2;
+    //webViewController.URL = *urlpick2;
     
     
     
-    [self.navigationController pushViewController: self.webViewController animated:YES];
+    [self.navigationController pushViewController: webViewController animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated

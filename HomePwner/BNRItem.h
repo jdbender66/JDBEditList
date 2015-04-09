@@ -9,6 +9,7 @@
 
 @property (nonatomic, copy) NSString *itemName;
 
+
 + (instancetype)randomItem;
 
 // Designated initializer for BNRItem
