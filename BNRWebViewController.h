@@ -12,6 +12,8 @@
 
 @interface BNRWebViewController : UIViewController
 
-@property (nonatomic, strong) NSURL *URL;
+@property (nonatomic, strong) NSString *UrlAddress;
+
+@property (nonatomic, strong) IBOutlet UIWebView *webView;
 
 @end

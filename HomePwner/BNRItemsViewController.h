@@ -10,6 +10,6 @@
 
 @interface BNRItemsViewController : UITableViewController
 
-@property (nonatomic) BNRWebViewController *webViewController;
+
 
 @end

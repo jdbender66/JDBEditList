@@ -10,18 +10,18 @@
 
 @implementation BNRWebViewController
 
-- (void)loadView
+-(void)viewDidLoad
 {
-    UIWebView *webView = [[UIWebView alloc] init];
-    webView.scalesPageToFit = YES;
-    self.view = webView;
+    [super viewDidLoad];
+    
 }
 
-- (void)setURL:(NSURL *)URL{
-    _URL = URL;
-    if (_URL) {
-        NSURLRequest *req = [NSURLRequest requestWithURL:_URL];
-        [(UIWebView *)self.view loadRequest:req];
+- (void)setUrlAddress:(NSString *)addr{
+    
+    NSURL *url = [[NSURL alloc] initWithString:addr];
+    if (url) {
+        NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        [self.webView loadRequest:req];
     }
 }
 @end

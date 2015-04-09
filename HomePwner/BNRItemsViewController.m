@@ -75,9 +75,8 @@
     NSArray *items = [[BNRItemStore sharedStore] allItems];
     BNRItem *selectedItem = items[indexPath.row];
     NSString *urlpick = selectedItem.itemName;
-    NSURL *urlpick2 = [[NSURL alloc] initWithString:urlpick];
     
-    //webViewController.URL = *urlpick2;
+    webViewController.UrlAddress = urlpick;
     
     
     
