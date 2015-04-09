@@ -5,6 +5,7 @@
 
 
 #import "BNRItemsViewController.h"
+#import "BNRWebViewController.h"
 #import "BNRItemStore.h"
 #import "BNRItem.h"
 
@@ -67,6 +68,29 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BNRWebViewController *webViewController = [[BNRWebViewController alloc] init];
+    
+    NSArray *items = [[BNRItemStore sharedStore] allItems];
+    BNRItem *selectedItem = items[indexPath.row];
+    NSString *urlpick = selectedItem.itemName;
+    NSURL *urlpick2 = [[NSURL alloc] initWithString:urlpick];
+    
+    self.webViewController.URL = *urlpick2;
+    
+    
+    
+    [self.navigationController pushViewController: self.webViewController animated:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+   
+    
+  
+    
+}
 
 
 @end

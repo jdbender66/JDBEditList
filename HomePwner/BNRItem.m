@@ -11,7 +11,7 @@
 + (instancetype)randomItem
 {
     // Create an immutable array of three adjectives
-    NSArray *randomAdjectiveList = @[@"Wikipedia", @"Facebook", @"Instagram"];
+    //NSArray *randomAdjectiveList = @[@"Wikipedia", @"Facebook", @"Instagram"];
 
     // Create an immutable array of three nouns
     NSArray *randomNounList = @[@"http://www.pitt.edu", @"http://www.Facebook.com", @"http://www.instagram.com"];
@@ -20,14 +20,13 @@
     // Note: The % operator, called the modulo operator, gives
     // you the remainder. So adjectiveIndex is a random number
     // from 0 to 2 inclusive.
-    NSInteger adjectiveIndex = arc4random() % [randomAdjectiveList count];
+    //NSInteger adjectiveIndex = arc4random() % [randomAdjectiveList count];
     NSInteger nounIndex = arc4random() % [randomNounList count];
 
     // Note that NSInteger is not an object, but a type definition
     // for "long"
 
-    NSString *randomName = [NSString stringWithFormat:@"%@ %@",
-                            randomAdjectiveList[adjectiveIndex],
+    NSString *randomName = [NSString stringWithFormat:@"%@",
                             randomNounList[nounIndex]];
 
     
