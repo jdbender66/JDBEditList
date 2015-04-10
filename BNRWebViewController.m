@@ -13,6 +13,9 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    //_webView.scalesPageToFit = YES;
+    [self setUrlAddress:@"http://m.pitt.edu"];
+    self.webView.scalesPageToFit = YES;
     
 }
 
@@ -22,6 +25,8 @@
     if (url) {
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [self.webView loadRequest:req];
+        
+        
     }
 }
 @end

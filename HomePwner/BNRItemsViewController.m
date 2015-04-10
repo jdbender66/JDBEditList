@@ -76,6 +76,7 @@
     BNRItem *selectedItem = items[indexPath.row];
     NSString *urlpick = selectedItem.itemName;
     
+    
     webViewController.UrlAddress = urlpick;
     
     
@@ -83,13 +84,6 @@
     [self.navigationController pushViewController: webViewController animated:YES];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-   
-    
-  
-    
-}
 
 
 @end

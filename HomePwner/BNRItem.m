@@ -14,7 +14,7 @@
     //NSArray *randomAdjectiveList = @[@"Wikipedia", @"Facebook", @"Instagram"];
 
     // Create an immutable array of three nouns
-    NSArray *randomNounList = @[@"http://www.pitt.edu", @"http://www.Facebook.com", @"http://www.instagram.com"];
+    NSArray *randomNounList = @[@"http://www.m.pitt.edu", @"http://www.Facebook.com", @"http://www.instagram.com"];
 
     // Get the index of a random adjective/noun from the lists
     // Note: The % operator, called the modulo operator, gives
