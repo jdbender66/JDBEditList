@@ -22,6 +22,7 @@
 		271FB5421927DFC60089E50A /* BNRItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FB5411927DFC60089E50A /* BNRItemsViewController.m */; };
 		271FB5481927E5680089E50A /* BNRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FB5471927E5680089E50A /* BNRItem.m */; };
 		271FB54B1927E7BA0089E50A /* BNRItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 271FB54A1927E7BA0089E50A /* BNRItemStore.m */; };
+		D422127F1AE0CD4A000FFBAB /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D422127E1AE0CD4A000FFBAB /* HeaderView.xib */; };
 		D4C86AD71AD62061007E5CF5 /* BNRWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C86AD61AD62061007E5CF5 /* BNRWebViewController.m */; };
 		D4D89C391AD6D2C5007316CD /* BNRWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4D89C381AD6D2C5007316CD /* BNRWebViewController.xib */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		271FB5471927E5680089E50A /* BNRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItem.m; sourceTree = "<group>"; };
 		271FB5491927E7BA0089E50A /* BNRItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRItemStore.h; sourceTree = "<group>"; };
 		271FB54A1927E7BA0089E50A /* BNRItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRItemStore.m; sourceTree = "<group>"; };
+		D422127E1AE0CD4A000FFBAB /* HeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		D4C86AD51AD62060007E5CF5 /* BNRWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRWebViewController.h; sourceTree = "<group>"; };
 		D4C86AD61AD62061007E5CF5 /* BNRWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRWebViewController.m; sourceTree = "<group>"; };
 		D4D89C381AD6D2C5007316CD /* BNRWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRWebViewController.xib; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				271FB4D619279C0A0089E50A /* Supporting Files */,
 				271FB5401927DFC60089E50A /* BNRItemsViewController.h */,
 				271FB5411927DFC60089E50A /* BNRItemsViewController.m */,
+				D422127E1AE0CD4A000FFBAB /* HeaderView.xib */,
 			);
 			path = HomePwner;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				271FB4DA19279C0A0089E50A /* InfoPlist.strings in Resources */,
 				D4D89C391AD6D2C5007316CD /* BNRWebViewController.xib in Resources */,
 				271FB4E219279C0A0089E50A /* Images.xcassets in Resources */,
+				D422127F1AE0CD4A000FFBAB /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

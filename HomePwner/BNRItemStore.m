@@ -17,6 +17,11 @@
 
 @implementation BNRItemStore
 
+- (void)removeItem:(BNRItem *)item
+{
+    [self.privateItems removeObjectIdenticalTo:item];
+}
+
 + (instancetype)sharedStore
 {
     static BNRItemStore *sharedStore = nil;
@@ -62,6 +67,20 @@
     
     
     return item; 
+}
+
+
+- (void)moveItemAtIndex:(NSUInteger)fromIndex toIndex:(NSUInteger)toIndex
+{
+    if (fromIndex == toIndex) {
+        return;
+    }
+    
+    
+    BNRItem *item = self.privateItems[fromIndex];
+    [self.privateItems removeObjectAtIndex:fromIndex];
+    
+    [self.privateItems insertObject:item atIndex:toIndex];
 }
 
 @end

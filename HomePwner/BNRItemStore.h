@@ -17,6 +17,10 @@
 +(instancetype) sharedStore;
 
 // item is created in store; item is returned.
--(BNRItem*) createItem; 
+-(BNRItem*) createItem;
+-(void)removeItem:(BNRItem *)item;
 
+
+- (void)moveItemAtIndex:(NSUInteger)fromIndex
+                toIndex:(NSUInteger)toIndex;
 @end
